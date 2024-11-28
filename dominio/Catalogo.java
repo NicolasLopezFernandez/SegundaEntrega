@@ -13,7 +13,11 @@ public class Catalogo implements Serializable{
 
     public void annadirOrdenador(Producto producto) {
         catalogo.add(producto);
-        System.out.println("Ordenador añadido al catalogo: "+ producto);
+        System.out.println("Ordenador añadido al catalogo: " + producto);
+    }
+    public void annadirMovil(Producto moviles) {
+        catalogo.add(moviles);
+        System.out.println("Movil añadido al catalogo: "+ moviles);
     }
 
     public void mostrarCatalogo() {
@@ -23,6 +27,9 @@ public class Catalogo implements Serializable{
             System.out.println("Catálogo de Ordenadores:");
             for (Producto producto : catalogo) {
                 producto.mostrarInformacion();
+            }
+            for (Producto moviles : catalogo) {
+                moviles.mostrarInformacion();
             }
         }
     }

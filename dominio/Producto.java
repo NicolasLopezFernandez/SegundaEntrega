@@ -1,10 +1,10 @@
 package dominio;
 
 public class Producto {
-    private String GPU;
-    private String CPU;
-    private String Marca;
-    private int RAM;
+    protected String GPU;
+    protected String CPU;
+    protected String Marca;
+    protected int RAM;
 
     public Producto(String Marca, String GPU, String CPU, int RAM) {
         this.Marca = Marca;
@@ -46,12 +46,12 @@ public class Producto {
     }
 
     public void mostrarInformacion() {
-        System.out.println("Marca: " + Marca + "GPU: " + GPU + "CPU: " + CPU + "RAM: " + RAM);
+        System.out.println("Marca: " + Marca + " GPU: " + GPU + " CPU: " + CPU + " RAM: " + RAM);
     }
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Marca: ").append(Marca).append("GPU: ").append(GPU).append("CPU: ").append(CPU).append("RAM: ").append(RAM);
+        sb.append("Marca: ").append(Marca).append(" GPU: ").append(GPU).append(" CPU: ").append(CPU).append(" RAM: ").append(RAM);
         return sb.toString();
     }
 }
