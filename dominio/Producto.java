@@ -13,15 +13,15 @@ public class Producto {
         this.RAM = RAM;
     }
 
-    public void setMarca() {
+    public void setMarca(String marca) {
         Marca = Marca;
     }
 
-    public void setCPU() {
+    public void setCPU(String CPU) {
         CPU = CPU;
     }
 
-    public void setGPU() {
+    public void setGPU(String GPU) {
         GPU = GPU;
     }
 

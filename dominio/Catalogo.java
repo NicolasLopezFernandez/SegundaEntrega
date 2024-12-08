@@ -10,6 +10,9 @@ public class Catalogo implements Serializable{
     public Catalogo() {
         this.catalogo = new ArrayList<>();
     }
+    public ArrayList<Producto> getCatalogo() {
+        return catalogo;
+    }
 
     public void annadirOrdenador(Producto producto) {
         catalogo.add(producto);
